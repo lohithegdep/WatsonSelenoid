@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Configurations that affect the Test Framework -->
+	<RunConfiguration>
+			<DisableParallelization>false</DisableParallelization>
+	       <MaxCpuCount>5</MaxCpuCount>
+	</RunConfiguration>
+
+	<!-- Parameters used by tests at run time -->
+	<TestRunParameters>
+		<Parameter name="webAppUrl" value="https://paycalculator.com.au/" />
+		<Parameter name="webAppUrl1" value="https://www.paycalculators.com.au/" />
+		<Parameter name="webAppUrl2" value="https://www.seek.com.au/career-advice/page/salary-calculator" />
+		<Parameter name="webAppUserName" value="Admin" />
+		<Parameter name="webAppPassword" value="Password" />
+		<Parameter name="BrowserType" value="Any" />
+	</TestRunParameters>
+
+	<!-- Configuration for loggers -->
+	<LoggerRunSettings>
+
+	</LoggerRunSettings>
+
+	<!-- Adapter Specific sections -->
+
+	<!-- MSTest adapter -->
+	<MSTest>
+		<Parallelize>
+			<Workers>5</Workers>
+			<Scope>MethodLevel</Scope>
+		</Parallelize>
+	</MSTest>
+
+</RunSettings>
